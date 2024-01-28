@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => (
-  <html lang='en'>
-    <body className={`${inter.className} container`}>{children}</body>
+  <html lang='en' className={'dark'}>
+    <body className={`${inter.className} container h-[100vh]`}>{children}</body>
   </html>
 );
 
