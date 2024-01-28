@@ -19,7 +19,7 @@ const LinkCard: FC<LinkCardProps> = (props) => {
           <GlowingText
             text={title}
             className={'text-2xl font-bold'}
-            blurClassName={'text-2xl font-bold blur-0 group-hover:blur-md'}
+            blurClassName={'text-2xl font-bold blur-none group-hover:blur-md'}
           />
           <ArrowRight />
         </CardHeader>
