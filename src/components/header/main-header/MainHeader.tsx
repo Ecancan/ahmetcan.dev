@@ -14,13 +14,13 @@ const MainHeader = () => (
       </Badge>
     </BaseView>
     <BaseView>
-        <Badge
-            className={
-                'p-4 text-sm font-normal bg-transparent border-none text-zinc-200 hover:bg-transparent'
-            }
-        >
-            <pre>by @ecancan</pre>
-        </Badge>
+      <Badge
+        className={
+          'p-4 text-sm font-normal bg-transparent border-none text-zinc-200 hover:bg-transparent'
+        }
+      >
+        <pre>by @ecancan</pre>
+      </Badge>
     </BaseView>
   </BaseView>
 );

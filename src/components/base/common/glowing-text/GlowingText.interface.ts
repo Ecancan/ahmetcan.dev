@@ -1,5 +1,5 @@
 export interface GlowingTextProps {
-    text: string;
-    className?:string;
-    blurClassName?:string;
+  text: string;
+  className?: string;
+  blurClassName?: string;
 }

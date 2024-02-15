@@ -9,11 +9,7 @@ const GlowingImage: FC<GlowingImageProps> = (props) => {
 
   return (
     <BaseView className={'relative'}>
-      <Image
-        className={'rounded-full z-10'}
-        src={src}
-        {...rest}
-      />
+      <Image className={'rounded-full z-10'} src={src} {...rest} />
       <Image
         className={'rounded-full blur-2xl absolute top-0 left-0 opacity-70'}
         src={src}
