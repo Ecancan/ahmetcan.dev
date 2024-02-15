@@ -7,7 +7,7 @@ const Page: FC<PageProps> = async (props) => {
 
   return (
     <BaseView className={'items-center'}>
-      <BaseView className={'w-6/12'}>Deploy</BaseView>
+      <BaseView className={'w-6/12'}>The under construction</BaseView>
     </BaseView>
   );
 };

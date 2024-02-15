@@ -66,7 +66,6 @@ export class AxiosProvider {
     this.axiosInstance.interceptors.response.use(
       (response) => response?.data || response,
       async (error) => {
-        console.log(error);
         const errorResponse = error?.response;
         const errorStatusCode = errorResponse?.status;
         const errorMessage = (errorResponse?.data as Record<string, unknown>)
