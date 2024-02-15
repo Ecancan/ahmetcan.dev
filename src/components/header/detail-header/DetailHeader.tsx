@@ -11,8 +11,8 @@ const DetailHeader = () => {
       href: '/docs',
     },
     {
-      label: 'Learn',
-      href: '/learn',
+      label: 'Packages',
+      href: '/packages',
     },
     {
       label: 'Bookmarks',

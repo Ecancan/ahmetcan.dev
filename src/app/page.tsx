@@ -16,10 +16,9 @@ const Page: FC<PageProps> = (props) => {
       description: 'Find in-depth information about me.',
     },
     {
-      title: 'Learn',
-      link: '/learn',
-      description:
-        'The page where I diligently write what I\'ve learned. If there\'s nothing, it means I\'m currently feeling lazy.',
+      title: 'Packages',
+      link: '/packages',
+      description: 'List of my owned and contributed packages.',
     },
     {
       title: 'Bookmarks',
