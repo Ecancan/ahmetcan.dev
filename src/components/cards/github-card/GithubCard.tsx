@@ -30,7 +30,9 @@ const GithubCard: FC<GithubCardProps> = (props) => {
             />
           </Link>
         </CardHeader>
-        <CardContent className={'text-sm text-zinc-400 px-0 pb-2 flex-row gap-4'}>
+        <CardContent
+          className={'text-sm text-zinc-400 px-0 pb-2 flex-row gap-4'}
+        >
           {description}
         </CardContent>
         <CardFooter className={'px-0 text-xs text-zinc-600 flex-row gap-2'}>

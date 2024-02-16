@@ -49,7 +49,13 @@ const RaindropCard: FC<RaindropCardProps> = (props) => {
           </BaseView>
           {cover && (
             <BaseView>
-              <GlowingImage src={cover} alt={title} width={100} height={100} blurClassName={'opacity-30'} />
+              <GlowingImage
+                src={cover}
+                alt={title}
+                width={100}
+                height={100}
+                blurClassName={'opacity-30'}
+              />
             </BaseView>
           )}
         </BaseView>
