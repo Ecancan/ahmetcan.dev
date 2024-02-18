@@ -7,6 +7,7 @@ import * as console from 'console';
 import GithubCard from '@/components/cards/github-card/GithubCard';
 import RaindropCard from '@/components/cards/raindrop-card/RaindropCard';
 
+export const revalidate = 120;
 export const metadata: Metadata = {
   title: 'Bookmarks - ahmetcan.dev',
   description:
