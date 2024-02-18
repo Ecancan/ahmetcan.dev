@@ -1,17 +1,17 @@
-import { Metadata } from 'next';
-import React, { FC } from 'react';
-import { PageProps } from '@/types/globalTypes.interface';
-import BaseView from '@/components/base/common/base-view/BaseView';
-import { collectionApi } from '@/api/raindrop/services/raindrop/raindropService';
-import * as console from 'console';
-import GithubCard from '@/components/cards/github-card/GithubCard';
-import RaindropCard from '@/components/cards/raindrop-card/RaindropCard';
+import { Metadata } from "next";
+import React, { FC } from "react";
+import { PageProps } from "@/types/globalTypes.interface";
+import BaseView from "@/components/base/common/base-view/BaseView";
+import { collectionApi } from "@/api/raindrop/services/raindrop/raindropService";
+import * as console from "console";
+import GithubCard from "@/components/cards/github-card/GithubCard";
+import RaindropCard from "@/components/cards/raindrop-card/RaindropCard";
 
 export const revalidate = 120;
 export const metadata: Metadata = {
-  title: 'Bookmarks - ahmetcan.dev',
+  title: "Bookmarks - ahmetcan.dev",
   description:
-    'You can find the bookmark data of the topics I\'m interested in here.',
+    "You can find the bookmark data of the topics I'm interested in here.",
 };
 
 const Page: FC<PageProps> = async (props) => {
@@ -21,10 +21,10 @@ const Page: FC<PageProps> = async (props) => {
   const bookmarks = await getRaindrop({ id: 41734854 });
 
   return (
-    <BaseView className={'items-center'}>
-      <BaseView className={'sm:w-6/12 w-full'}>
+    <BaseView className={"items-center"}>
+      <BaseView className={"sm:w-6/12 w-full"}>
         <BaseView>
-          <h1 className={'text-3xl pb-6 font-bold'}>Bookmarks</h1>
+          <h1 className={"text-3xl pb-6 font-bold"}>Bookmarks</h1>
         </BaseView>
         <BaseView>
           {bookmarks?.data?.items?.map(
@@ -33,7 +33,7 @@ const Page: FC<PageProps> = async (props) => {
                 key={index}
                 title={String(item?.title)}
                 link={String(item?.link)}
-                description={String(item?.note || item?.excerpt) || '-'}
+                description={String(item?.note || item?.excerpt) || "-"}
                 domain={String(item?.domain)}
                 cover={String(item?.cover)}
               />

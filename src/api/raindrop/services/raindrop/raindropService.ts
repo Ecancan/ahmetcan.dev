@@ -1,5 +1,5 @@
-import { ApiServiceMethod } from '@/enum/apiServiceMethods.enum';
-import { raindropApi } from '@/api/raindrop/raindropApi';
+import { ApiServiceMethod } from "@/enum/apiServiceMethods.enum";
+import { raindropApi } from "@/api/raindrop/raindropApi";
 
 export const collectionApi = {
   getRaindrop({ id }: { id: number }) {

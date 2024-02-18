@@ -1,7 +1,7 @@
-import axios, { AxiosInstance, Method } from 'axios';
-import { ApiError } from '@/providers/AxiosProvider.interface';
-import { ApiErrorUseCase } from '@/enum/error.enum';
-import * as console from 'console';
+import axios, { AxiosInstance, Method } from "axios";
+import { ApiError } from "@/providers/AxiosProvider.interface";
+import { ApiErrorUseCase } from "@/enum/error.enum";
+import * as console from "console";
 
 export class AxiosProvider {
   // Variables
@@ -39,21 +39,21 @@ export class AxiosProvider {
     _headers: Record<string, string | number | boolean> | undefined,
   ) {
     this.headers = _headers || {
-      Accept: 'application/json',
+      Accept: "application/json",
     };
   }
 
   public setAccessToken() {
     let raw = null;
 
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       raw = localStorage?.getItem(this.storageAuthKey);
     }
 
     const auth = (raw?.length && JSON.parse(raw)) || this.authToken || null;
 
-    auth
-      && (this.axiosInstance.defaults.headers.common.Authorization = `Bearer ${auth?.access_token || auth}`);
+    auth &&
+      (this.axiosInstance.defaults.headers.common.Authorization = `Bearer ${auth?.access_token || auth}`);
   }
 
   private setAdditionalSuffixParams() {
@@ -73,14 +73,14 @@ export class AxiosProvider {
 
         const apiError: ApiError = {
           errorLabel: errorMessage as string,
-          errorTitle: 'General Error',
+          errorTitle: "General Error",
           useCase: ApiErrorUseCase.SHOW_MESSAGE,
           statusCode: errorStatusCode as number,
         };
 
         if (!error || !errorResponse) {
-          apiError.errorLabel = 'GLOBAL.API_ERROR.NETWORK.DESCRIPTION';
-          apiError.errorTitle = 'Network Error';
+          apiError.errorLabel = "GLOBAL.API_ERROR.NETWORK.DESCRIPTION";
+          apiError.errorTitle = "Network Error";
           apiError.useCase = ApiErrorUseCase.SHOW_MESSAGE;
         }
 
@@ -107,13 +107,13 @@ export class AxiosProvider {
     rest?: Record<string, unknown>;
   }) {
     this.setAccessToken();
-    const queryParams = typeof params === 'object' ? params : {};
+    const queryParams = typeof params === "object" ? params : {};
 
     const axiosResponse = await this.axiosInstance({
       method,
       url,
       headers: { ...this.headers, ...(headers || {}) },
-      baseURL: `${this.baseURL}${prefix || ''}`,
+      baseURL: `${this.baseURL}${prefix || ""}`,
       data: body,
       params: { ...this.setAdditionalSuffixParams(), ...queryParams },
       ...rest,

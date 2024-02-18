@@ -1,4 +1,4 @@
-import { ApiServiceMethod } from '@/enum/apiServiceMethods.enum';
+import { ApiServiceMethod } from "@/enum/apiServiceMethods.enum";
 
 export type RequestData = {
   body?: Record<string, unknown> | unknown;

@@ -1,4 +1,4 @@
-import { ApiErrorUseCase } from '../enum/error.enum';
+import { ApiErrorUseCase } from "../enum/error.enum";
 
 export type ApiError = {
   id?: string;

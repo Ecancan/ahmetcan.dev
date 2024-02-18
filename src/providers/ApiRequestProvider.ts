@@ -1,6 +1,6 @@
-import { Method } from 'axios';
-import { AxiosProvider } from './AxiosProvider';
-import { ApiError } from './AxiosProvider.interface';
+import { Method } from "axios";
+import { AxiosProvider } from "./AxiosProvider";
+import { ApiError } from "./AxiosProvider.interface";
 
 export class ApiRequestProvider {
   api;
