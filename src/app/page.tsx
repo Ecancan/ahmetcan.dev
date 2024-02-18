@@ -13,29 +13,29 @@ const Page: FC<PageProps> = (props) => {
     {
       title: 'Docs',
       link: '/docs',
-      description: 'Find in-depth information about me.',
+      description: 'Find in-depth information about me.'
     },
     {
       title: 'Packages',
       link: '/packages',
-      description: 'List of my owned and contributed packages.',
+      description: 'List of my owned and contributed packages.'
     },
     {
       title: 'Bookmarks',
       link: '/bookmarks',
       description:
-        'You can find the bookmark data of the topics I\'m interested in here.',
+        'You can find the bookmark data of the topics I\'m interested in here.'
     },
     {
       title: 'Deploy',
       link: '/deploy',
-      description: 'Find the deployment instructions.',
-    },
+      description: 'Find the deployment instructions.'
+    }
   ];
 
   return (
     <BaseView className={'justify-between h-full'}>
-      <MainHeader />
+      <MainHeader/>
       <BaseView className={'flex-1 mb-4 items-center justify-center'}>
         <BaseView className={'flex-row items-center gap-8'}>
           <GlowingImage
@@ -44,7 +44,7 @@ const Page: FC<PageProps> = (props) => {
             height={150}
             alt={'profile'}
           />
-          <GlowingText text={'.dev'} />
+          <GlowingText text={'.dev'}/>
         </BaseView>
       </BaseView>
       <BaseView className={'flex-row gap-4 mb-12'}>

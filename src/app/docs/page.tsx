@@ -20,13 +20,12 @@ const Page: FC<PageProps> = async (props) => {
             </BaseView>
             <BaseView className={'text-zinc-300 flex gap-2'}>
               <p>
-                Her şey kendi ihtiyaçları için 2011 yılında web site nasıl
-                yapılır yazmak ile başlayan ve bu işin hobi haline gelmesi ile
-                başladı.
+                How to create a website for everyone's needs in 2011
+                It is done, starting with writing and turning it into a hobby.
+                started.
               </p>
               <p>
-                Yazılım dışında hobilerim ise 3D modelleme, fotoğrafçılık ve
-                sinema diyebilirim.
+                Apart from software, my hobbies are 3D modeling, photography and cinema.
               </p>
             </BaseView>
           </BaseView>
