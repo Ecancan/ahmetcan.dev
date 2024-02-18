@@ -19,7 +19,7 @@ const Page: FC<PageProps> = async (props) => {
           <h1 className={'text-3xl pb-6 font-bold'}>Bookmarks</h1>
         </BaseView>
         <BaseView>
-          {bookmarks?.data.items.map(
+          {bookmarks?.data?.items?.map(
             (item: Record<string, unknown>, index: number) => (
               <RaindropCard
                 key={index}
