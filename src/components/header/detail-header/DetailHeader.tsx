@@ -25,7 +25,7 @@ const DetailHeader = () => {
   ];
 
   return (
-    <BaseView className={'flex-row justify-between items-center mt-12 mb-12'}>
+    <BaseView className={'flex-row sm:justify-between justify-center items-center mt-12 mb-12'}>
       <BaseView>
         <Link href={'/'}>
           <GlowingImage
@@ -36,7 +36,7 @@ const DetailHeader = () => {
           />
         </Link>
       </BaseView>
-      <BaseView className={'flex-row gap-8'}>
+      <BaseView className={'flex-row gap-8 sm:flex hidden'}>
         {menuItems.map((item, index) => (
           <Link key={index} href={item.href} className={'group'}>
             <GlowingText

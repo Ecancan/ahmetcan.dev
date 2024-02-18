@@ -14,7 +14,7 @@ const Page: FC<PageProps> = async (props) => {
 
   return (
     <BaseView className={'items-center'}>
-      <BaseView className={'w-6/12'}>
+      <BaseView className={'sm:w-6/12 w-full'}>
         <BaseView>
           <h1 className={'text-3xl pb-6 font-bold'}>Bookmarks</h1>
         </BaseView>

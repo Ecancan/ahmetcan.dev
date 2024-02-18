@@ -12,7 +12,7 @@ const Page: FC<PageProps> = async (props) => {
 
   return (
     <BaseView className={'items-center'}>
-      <BaseView className={'w-6/12 flex-col'}>
+      <BaseView className={'sm:w-6/12 w-full flex-col'}>
         <BaseView>
           <h1 className={'text-3xl pb-6 font-bold'}>Packages</h1>
         </BaseView>

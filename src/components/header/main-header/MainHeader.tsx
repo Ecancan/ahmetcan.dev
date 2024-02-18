@@ -16,7 +16,7 @@ const MainHeader = () => (
     <BaseView>
       <Badge
         className={
-          'p-4 text-sm font-normal bg-transparent border-none text-zinc-200 hover:bg-transparent'
+          'p-4 text-sm font-normal bg-transparent border-none text-zinc-200 hover:bg-transparent sm:flex hidden'
         }
       >
         <pre>by @ecancan</pre>
