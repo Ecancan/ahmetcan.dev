@@ -1,6 +1,6 @@
-import React, { ForwardedRef, forwardRef } from "react";
-import { twMerge } from "tailwind-merge";
-import { BaseViewProps } from "./BaseView.interface";
+import React, { ForwardedRef, forwardRef } from 'react';
+import { twMerge } from 'tailwind-merge';
+import { BaseViewProps } from './BaseView.interface';
 
 const BaseView = forwardRef(
   (props: BaseViewProps, ref: ForwardedRef<HTMLDivElement>) => {
@@ -9,7 +9,7 @@ const BaseView = forwardRef(
     const classes = twMerge(`
     flex
     flex-col
-    ${className || ""}
+    ${className || ''}
   `);
 
     return (
