@@ -37,7 +37,9 @@ const Page: FC<PageProps> = (props) => {
     <BaseView className={'justify-between h-full'}>
       <MainHeader />
       <BaseView className={'flex-1 mb-4 items-center justify-center'}>
-        <BaseView className={'flex-row items-center gap-8 sm:pt-0 sm:pb-0 pt-6 pb-16'}>
+        <BaseView
+          className={'flex-row items-center gap-8 sm:pt-0 sm:pb-0 pt-6 pb-16'}
+        >
           <GlowingImage
             src={'/assets/img/profile.jpeg'}
             width={150}

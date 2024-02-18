@@ -25,7 +25,11 @@ const DetailHeader = () => {
   ];
 
   return (
-    <BaseView className={'flex-row sm:justify-between justify-center items-center mt-12 mb-12'}>
+    <BaseView
+      className={
+        'flex-row sm:justify-between justify-center items-center mt-12 mb-12'
+      }
+    >
       <BaseView>
         <Link href={'/'}>
           <GlowingImage
