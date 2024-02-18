@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import React, { FC } from 'react';
 import { PageProps } from '@/types/globalTypes.interface';
 import BaseView from '@/components/base/common/base-view/BaseView';
@@ -5,6 +6,11 @@ import { collectionApi } from '@/api/raindrop/services/raindrop/raindropService'
 import * as console from 'console';
 import GithubCard from '@/components/cards/github-card/GithubCard';
 import RaindropCard from '@/components/cards/raindrop-card/RaindropCard';
+
+export const metadata: Metadata = {
+  title: 'Bookmarks - ahmetcan.dev',
+  description: 'You can find the bookmark data of the topics I\'m interested in here.',
+};
 
 const Page: FC<PageProps> = async (props) => {
   const { params } = props;

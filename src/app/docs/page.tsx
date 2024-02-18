@@ -1,8 +1,13 @@
+import { Metadata } from 'next';
 import React, { FC } from 'react';
 import { PageProps } from '@/types/globalTypes.interface';
 import BaseView from '@/components/base/common/base-view/BaseView';
 import ExperienceCard from '@/components/cards/experience-card/ExperienceCard';
 
+export const metadata: Metadata = {
+  title: 'Docs - ahmetcan.dev',
+  description: 'Find in-depth information about me.',
+};
 const Page: FC<PageProps> = async (props) => {
   const { params } = props;
 
