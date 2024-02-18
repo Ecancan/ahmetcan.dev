@@ -49,7 +49,7 @@ const Page: FC<PageProps> = (props) => {
           <GlowingText text={'.dev'} />
         </BaseView>
       </BaseView>
-      <BaseView className={'flex-row gap-4 mb-12 flex-wrap'}>
+      <BaseView className={'flex-row gap-4 pb-12 flex-wrap'}>
         {cards.map((card, index) => (
           <LinkCard key={index} {...card} />
         ))}
