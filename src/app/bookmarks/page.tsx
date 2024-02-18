@@ -9,7 +9,8 @@ import RaindropCard from '@/components/cards/raindrop-card/RaindropCard';
 
 export const metadata: Metadata = {
   title: 'Bookmarks - ahmetcan.dev',
-  description: 'You can find the bookmark data of the topics I\'m interested in here.',
+  description:
+    'You can find the bookmark data of the topics I\'m interested in here.',
 };
 
 const Page: FC<PageProps> = async (props) => {
