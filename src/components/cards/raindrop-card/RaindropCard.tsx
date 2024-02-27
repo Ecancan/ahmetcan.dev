@@ -19,7 +19,7 @@ const RaindropCard: FC<RaindropCardProps> = (props) => {
     <BaseView className={'flex flex-1 items-stretch'}>
       <Card className={'flex-1 rounded-none border-1 border-b border-zinc-800'}>
         <BaseView className={'flex-row items-center gap-10'}>
-          <BaseView>
+          <BaseView className={'flex-1'}>
             <CardHeader className={'flex-row items-center gap-4 px-0 pb-4'}>
               <Link href={link} className={'group'} target={'_blank'}>
                 <GlowingText
@@ -48,7 +48,7 @@ const RaindropCard: FC<RaindropCardProps> = (props) => {
             </CardFooter>
           </BaseView>
           {cover && (
-            <BaseView>
+            <BaseView className={'md:flex hidden'}>
               <GlowingImage
                 src={cover}
                 alt={title}

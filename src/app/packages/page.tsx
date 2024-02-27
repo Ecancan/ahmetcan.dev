@@ -5,6 +5,7 @@ import BaseView from '@/components/base/common/base-view/BaseView';
 import { repoApi } from '@/api/github/services/repo/repoService';
 import GithubCard from '@/components/cards/github-card/GithubCard';
 
+export const revalidate = 120;
 export const metadata: Metadata = {
   title: 'Packages - ahmetcan.dev',
   description: 'List of my owned and contributed packages.',
