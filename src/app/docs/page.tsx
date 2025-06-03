@@ -25,12 +25,10 @@ const Page: FC<PageProps> = async (props) => {
             </BaseView>
             <BaseView className={'text-zinc-300 flex gap-2'}>
               <p>
-                To create a website that caters to everyone's needs in 2011,
-                begin by writing and transforming it into a hobby.
+                Hey, I’m Ahmet CAN. I got into web stuff back in 2012 just because I was curious. Started with basic HTML, messed around in Dreamweaver, then met PHP and WordPress. Built and sold a few themes, broke a bunch of things, learned even more.
               </p>
               <p>
-                Apart from software, my hobbies include 3D modeling,
-                photography, and cinema.
+                Now I do this stuff professionally, always trying to level up with modern tools. Besides coding, I’m into 3D modeling, photography, and cinema—basically anything creative.
               </p>
             </BaseView>
           </BaseView>
