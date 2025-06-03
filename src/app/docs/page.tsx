@@ -25,10 +25,15 @@ const Page: FC<PageProps> = async (props) => {
             </BaseView>
             <BaseView className={'text-zinc-300 flex gap-2'}>
               <p>
-                Hey, I’m Ahmet CAN. I got into web stuff back in 2012 just because I was curious. Started with basic HTML, messed around in Dreamweaver, then met PHP and WordPress. Built and sold a few themes, broke a bunch of things, learned even more.
+                Hey, I’m Ahmet CAN. I got into web stuff back in 2012 just
+                because I was curious. Started with basic HTML, messed around in
+                Dreamweaver, then met PHP and WordPress. Built and sold a few
+                themes, broke a bunch of things, learned even more.
               </p>
               <p>
-                Now I do this stuff professionally, always trying to level up with modern tools. Besides coding, I’m into 3D modeling, photography, and cinema—basically anything creative.
+                Now I do this stuff professionally, always trying to level up
+                with modern tools. Besides coding, I’m into 3D modeling,
+                photography, and cinema—basically anything creative.
               </p>
             </BaseView>
           </BaseView>

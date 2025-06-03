@@ -17,10 +17,24 @@ const GlowingImage: FC<GlowingImageProps> = (props) => {
     ${blurClassName || ''}
   `);
 
+  // Destructure alt from rest to prevent duplicates
+  const { alt, ...imageProps } = rest;
+  const altText = typeof src === 'string' ? src : '';
+
   return (
     <BaseView className={'relative'}>
-      <Image className={classes} src={src} {...rest} />
-      <Image src={src} {...rest} className={blurClasses} />
+      <Image
+        className={classes}
+        src={src}
+        alt={alt || altText}
+        {...imageProps}
+      />
+      <Image
+        src={src}
+        alt='' // Decorative image, so empty alt is appropriate
+        className={blurClasses}
+        {...imageProps}
+      />
     </BaseView>
   );
 };
